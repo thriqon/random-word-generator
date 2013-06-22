@@ -1,0 +1,22 @@
+{
+  "name": "random-word-generator",
+  "version": "0.9.0",
+  "description": "Generate random, but pronouncable words",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": "git://github.com/thriqon/random-name-generator.git",
+  "homepage": "http://github.com/thriqon/random-name-generator",
+  "keywords": [
+    "random",
+    "words",
+    "name"
+  ],
+  "author": "thriqon",
+  "license": "MIT",
+  "dependencies": {
+    "chai": "~1.7.0",
+    "mocha": "~1.11.0"
+  }
+}
