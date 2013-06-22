@@ -1,0 +1,143 @@
+{
+    "project": {
+        "name": "Random Word Generator",
+        "description": "Random Word Generator : generate pronouncable words",
+        "version": "1.0.0",
+        "url": "http://thriqon.github.com/random-word-generator"
+    },
+    "files": {
+        "index.js": {
+            "name": "index.js",
+            "modules": {
+                "Generator": 1
+            },
+            "classes": {
+                "Generator": 1
+            },
+            "fors": {
+                "Generator": 1
+            },
+            "namespaces": {}
+        }
+    },
+    "modules": {
+        "Generator": {
+            "name": "Generator",
+            "submodules": {},
+            "classes": {
+                "Generator": 1
+            },
+            "fors": {},
+            "namespaces": {},
+            "tag": "module",
+            "file": "index.js",
+            "line": 68,
+            "description": "The module providing the generator"
+        }
+    },
+    "classes": {
+        "Generator": {
+            "name": "Generator",
+            "shortname": "Generator",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "module": "Generator",
+            "file": "index.js",
+            "line": 68,
+            "description": "A word generator utility\n\nPatterns\n--------\n\nA pattern describes how to generate words. It consists of\na series of characters, each referencing a group. If\nthe letter is uppercase, the result will also be in uppercase.\n\nExample:\n\n    var generator = new Generator();\n    generator.pattern('Cvcvcv');\n\n    generator.generate(); // returns something like 'Tafenu'\n\nGroups\n------\n\nGroups are simple arrays with characters.",
+            "is_constructor": 1
+        }
+    },
+    "classitems": [
+        {
+            "file": "index.js",
+            "line": 103,
+            "description": "Generates a word using this instances pattern and groups.",
+            "itemtype": "method",
+            "name": "generate",
+            "params": [
+                {
+                    "name": "callback",
+                    "description": "node-style callback with the word as second parameter",
+                    "type": "Callback (error, result)",
+                    "optional": true
+                }
+            ],
+            "return": {
+                "description": "the word",
+                "type": "String"
+            },
+            "class": "Generator"
+        },
+        {
+            "file": "index.js",
+            "line": 114,
+            "description": "Gives the group for the key, or sets this group",
+            "itemtype": "method",
+            "name": "group",
+            "params": [
+                {
+                    "name": "key",
+                    "description": "the name of this group (one character, lowercase)",
+                    "type": "Character"
+                },
+                {
+                    "name": "value",
+                    "description": "the new array of characters for this group",
+                    "type": "Array Character",
+                    "optional": true
+                }
+            ],
+            "return": {
+                "description": "the current group (in case of setting, the old group)",
+                "type": "Array Character"
+            },
+            "class": "Generator"
+        },
+        {
+            "file": "index.js",
+            "line": 124,
+            "description": "Gives the pattern, or sets it",
+            "itemtype": "method",
+            "name": "pattern",
+            "params": [
+                {
+                    "name": "pattern",
+                    "description": "the pattern, see chapter in documentation for details",
+                    "type": "String",
+                    "optional": true
+                }
+            ],
+            "return": {
+                "description": "the current pattern (the old, if set)",
+                "type": "String"
+            },
+            "class": "Generator"
+        },
+        {
+            "file": "index.js",
+            "line": 136,
+            "description": "generates a default-configured word, with optional callback",
+            "itemtype": "method",
+            "name": "generate",
+            "static": 1,
+            "params": [
+                {
+                    "name": "callback",
+                    "description": "node-style callback with word as second parameter",
+                    "type": "Callback (error, result)",
+                    "optional": true
+                }
+            ],
+            "return": {
+                "description": "the word",
+                "type": "String"
+            },
+            "class": "Generator"
+        }
+    ],
+    "warnings": []
+}
