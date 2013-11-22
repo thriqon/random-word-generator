@@ -1,6 +1,6 @@
 {
   "name": "random-word-generator",
-  "version": "0.9.0",
+  "version": "0.9.1",
   "description": "Generate random, but pronouncable words",
   "main": "index.js",
   "scripts": {
@@ -16,7 +16,7 @@
   "author": "thriqon",
   "license": "MIT",
   "devDependencies": {
-    "chai": "~1.7.0",
-    "mocha": "~1.11.0"
+    "chai": "~1.8.1",
+    "mocha": "~1.14.0"
   }
 }
