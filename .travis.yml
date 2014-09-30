@@ -6,4 +6,4 @@ deploy:
     provider: npm
     email: "mail@jonasw.de"
     on:
-        tags: true
+        branch: production
