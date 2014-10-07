@@ -7,6 +7,8 @@ deploy:
   api_key:
     secure: kFKsQom7yeOo/+CfCxtCubX2VIPIxhL3c1WXxo5EV6zcumTteyMREtv4OhHzMgUW5QqEJpxMPEodVeQzsmtjrWdnW7pkKCl5CK5oJ1N13SVsjShzE7h/SwuF5Mz8C4ZRzn99y3mPL2GhZM9KDVnyw/6X3iMi9vPIGP5at6kK8NM=
   on:
-    tags: true
-    all_branches: true
+    branch: master
     repo: thriqon/random-word-generator
+
+before_deploy:
+  - mkdir -p .git/logs/refs/stash

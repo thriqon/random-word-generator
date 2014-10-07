@@ -1,6 +1,6 @@
 {
   "name": "random-word-generator",
-  "version": "0.9.6",
+  "version": "0.9.7",
   "description": "Generate random, but pronouncable words",
   "main": "index.js",
   "scripts": {
