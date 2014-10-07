@@ -11,4 +11,4 @@ deploy:
     repo: thriqon/random-word-generator
 
 before_deploy:
-  - mkdir -p .git/logs/refs/stash
+  - mkdir -p .git/logs/refs/
