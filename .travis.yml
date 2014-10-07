@@ -5,10 +5,9 @@ deploy:
   provider: npm
   email: mail@jonasw.de
   api_key:
-    secure: kFKsQom7yeOo/+CfCxtCubX2VIPIxhL3c1WXxo5EV6zcumTteyMREtv4OhHzMgUW5QqEJpxMPEodVeQzsmtjrWdnW7pkKCl5CK5oJ1N13SVsjShzE7h/SwuF5Mz8C4ZRzn99y3mPL2GhZM9KDVnyw/6X3iMi9vPIGP5at6kK8NM=
+    secure: ScOF8faKWOwdhDYu7cQkleGPTOEPUSAkdyaVcQN0VPwnkr4BoX03coCw2I4vqvByi0oxEBy3bTtjk3cJODKd7+NjFxZDGj04RZPfnORIrAXY1FGu/62yERWpgJkqrArjVGOw3RzwPm+zgUUMESmBeUOyp7OUYR1KM9xyG6Uypfk=
   on:
     branch: master
     repo: thriqon/random-word-generator
-
 before_deploy:
   - mkdir -p .git/logs/refs/
