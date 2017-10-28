@@ -13,11 +13,26 @@ That's it...
 Usage
 -----
 
-    var Rwg = require('random-word-generator');
-    var generator = new Rwg();
+    > var Rwg = require('random-word-generator');
+    > var generator = new Rwg();
 
-    generator.generate(); // yields something like Takalonazu
+    > generator.generate(); // yields something like Takalonazu
 
+    > for (var i = 0; i < 10; i++) { console.log(generator.generate()); }
+    Megebetipu
+    Yirovijajo
+    Jorehaheku
+    Rogevehojo
+    Sewurovipe
+    Monawoweno
+    Lahuvilufe
+    Ramufovuha
+    Xunobawiqa
+    Covuyosayu
+
+Each call to `generate()` generates a random solution for the pattern. By default,
+this leads to a somehow pronounceable word. It is only by accident that this word
+may be found in a dictionary.
 
 Documentation
 -------------
