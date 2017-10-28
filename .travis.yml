@@ -1,13 +1,1 @@
 language: node_js
-node_js:
-- '0.11'
-deploy:
-  provider: npm
-  email: mail@jonasw.de
-  api_key:
-    secure: ScOF8faKWOwdhDYu7cQkleGPTOEPUSAkdyaVcQN0VPwnkr4BoX03coCw2I4vqvByi0oxEBy3bTtjk3cJODKd7+NjFxZDGj04RZPfnORIrAXY1FGu/62yERWpgJkqrArjVGOw3RzwPm+zgUUMESmBeUOyp7OUYR1KM9xyG6Uypfk=
-  on:
-    branch: master
-    repo: thriqon/random-word-generator
-before_deploy:
-  - mkdir -p .git/logs/refs/
